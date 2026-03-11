@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chukwuma Nwokorie | Portfolio</title>
+  <meta name="description" content="Responsive animated portfolio built with HTML, CSS, and JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand">
+        <span class="brand-mark">CN</span>
+        <span class="brand-text">Chukwuma Nwokorie</span>
+      </a>
+
+      <nav class="nav" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="toggle-sun">☀</span>
+          <span class="toggle-moon">☾</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Frontend Developer • Web Designer • Creative Builder</p>
+          <h1>Creating polished digital experiences that feel modern and alive.</h1>
+          <p class="hero-text">
+            I design and build responsive websites and interfaces with clean structure,
+            strong visual hierarchy, smooth interactions, and practical functionality.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Let's Work</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article>
+              <strong data-counter="12">0</strong>
+              <span>Projects Built</span>
+            </article>
+            <article>
+              <strong data-counter="5">0</strong>
+              <span>UI Concepts</span>
+            </article>
+            <article>
+              <strong data-counter="100">0</strong>
+              <span>% Responsive</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-card reveal delay-1">
+          <div class="floating-card card-front">
+            <span class="pill">Available for freelance</span>
+            <h3>Portfolio Highlights</h3>
+            <ul>
+              <li>Responsive layouts</li>
+              <li>Interactive JavaScript features</li>
+              <li>Clean animations and transitions</li>
+              <li>Elegant portfolio presentation</li>
+            </ul>
+          </div>
+          <div class="floating-card card-back"></div>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container split-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Building websites that balance style, speed, and clarity.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="glass-card reveal delay-1">
+            <h3>Who I Am</h3>
+            <p>
+              I'm a developer focused on creating functional and visually refined web experiences.
+              I enjoy turning ideas into structured layouts, interactive components, and modern interfaces.
+            </p>
+          </article>
+          <article class="glass-card reveal delay-2">
+            <h3>What I Do</h3>
+            <p>
+              I build portfolios, landing pages, business websites, and interface concepts using HTML,
+              CSS, JavaScript, and a strong eye for layout and usability.
+            </p>
+          </article>
+          <article class="glass-card reveal delay-3">
+            <h3>My Approach</h3>
+            <p>
+              I prioritize responsive design, smooth user flow, visual consistency, and practical features
+              that make websites feel professional and memorable.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Core Skills</p>
+          <h2>Tools and technologies I use to bring ideas to life.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span>HTML5</span>
+            <div class="skill-bar"><i style="width: 94%"></i></div>
+          </article>
+          <article class="skill-card reveal delay-1">
+            <span>CSS3 / Responsive Design</span>
+            <div class="skill-bar"><i style="width: 92%"></i></div>
+          </article>
+          <article class="skill-card reveal delay-2">
+            <span>JavaScript</span>
+            <div class="skill-bar"><i style="width: 88%"></i></div>
+          </article>
+          <article class="skill-card reveal delay-3">
+            <span>UI / UX Thinking</span>
+            <div class="skill-bar"><i style="width: 90%"></i></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="projects-top reveal">
+          <div>
+            <p class="eyebrow">Featured Work</p>
+            <h2>Selected projects and design directions.</h2>
+          </div>
+
+          <div class="filters" id="projectFilters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="ui">UI</button>
+            <button class="filter-btn" data-filter="brand">Brand</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="web">
+            <div class="project-image gradient-one"></div>
+            <div class="project-content">
+              <span class="project-tag">Web</span>
+              <h3>Furniture Showcase Website</h3>
+              <p>Elegant catalog-style landing page for a furniture brand with product spotlight sections.</p>
+              <div class="project-links">
+                <a href="#">Live Demo</a>
+                <a href="#">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1" data-category="ui">
+            <div class="project-image gradient-two"></div>
+            <div class="project-content">
+              <span class="project-tag">UI</span>
+              <h3>Premium Dashboard Concept</h3>
+              <p>Clean admin interface layout with metrics, cards, rich spacing, and responsive behavior.</p>
+              <div class="project-links">
+                <a href="#">Preview</a>
+                <a href="#">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2" data-category="brand">
+            <div class="project-image gradient-three"></div>
+            <div class="project-content">
+              <span class="project-tag">Brand</span>
+              <h3>Personal Brand Portfolio</h3>
+              <p>Modern single-page portfolio with animated hero, interactive filtering, and strong identity.</p>
+              <div class="project-links">
+                <a href="#">Explore</a>
+                <a href="#">Case Study</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Services</p>
+          <h2>Ways I can help you build better digital presence.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <h3>Portfolio Websites</h3>
+            <p>Professional personal websites for creatives, developers, and business owners.</p>
+          </article>
+          <article class="service-card reveal delay-1">
+            <h3>Business Landing Pages</h3>
+            <p>Focused pages designed to present services clearly and convert interest into action.</p>
+          </article>
+          <article class="service-card reveal delay-2">
+            <h3>UI Enhancement</h3>
+            <p>Refreshing existing layouts with better spacing, hierarchy, responsiveness, and animation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-wrap reveal">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something clean, functional, and impressive.</h2>
+          <p>
+            Open to collaborations, freelance projects, and interface design opportunities.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="input-group full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          </div>
+          <button class="btn btn-primary full" type="submit">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Chukwuma Nwokorie. Built with HTML, CSS, and JavaScript.</p>
+      <div class="socials">
+        <a href="mailto:chukwumanwokorie387@gmail.com">Email</a>
+        <a href="https://github.com/nwokoriechuks" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
